@@ -4,6 +4,7 @@ public class Library {
         Book book2 = new Book(50);
         Book book3 = new Book(34, 53);
         Book book4 = new Book("Анонимус", 100, 500);
+        Book book5 = new Book(null, null, 12, 57);
         Book[] testBookArray = {book1, book2, book3, book4};
         Reader testReader = new Reader();
         Book testSelectedBook = testReader.choiceBook(testBookArray);

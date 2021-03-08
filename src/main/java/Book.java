@@ -5,15 +5,15 @@ public class Book {
     private int numberOfPages;
 
     Book(String title, String author, int serialNumber, int numberOfPages){
-        this.title = title;
-        this.author = author;
+        this.title = title != null ? title : "";
+        this.author = author != null ? author : "";
         this.serialNumber = validate(serialNumber);
         this.numberOfPages = validate(numberOfPages);
     }
 
     Book(String author, int serialNumber, int numberOfPages){
         this.title = "";
-        this.author = author;
+        this.author = author != null ? author : "";
         this.serialNumber = validate(serialNumber);
         this.numberOfPages = validate(numberOfPages);
     }
